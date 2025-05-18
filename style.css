@@ -1,0 +1,67 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark gray text */
+    margin: 20px;
+    padding: 0;
+}
+
+/* Style for div (ID: div1) */
+#div1 {
+    font-size: 1.2rem; /* Slightly larger font */
+    padding: 10px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+    background-color: #ffffff; /* White background */
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+/* Styling for paragraph */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Buttons styling */
+button {
+    display: inline-block;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    margin-right: 10px; /* Spacing between buttons */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Textarea styling */
+textarea {
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: block;
+    resize: none; /* Disable resizing */
+}
+
+/* Style for div2 */
+#div2 {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px dashed #999; /* Dashed gray border */
+    background-color: #fafafa; /* Light gray background */
+    border-radius: 8px;
+    min-height: 50px; /* Ensure some height even when empty */
+}
