@@ -6,7 +6,7 @@ const div1 = document.getElementById("div1");
 // Add a click event listener to the button
 button.addEventListener("click", () => {
     // Update the text content of the div
-    div1.textContent = "Hello World";
+    div1.textContent = "Selamlar";
 });
 button2.addEventListener("click", () => {
 
