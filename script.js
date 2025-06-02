@@ -1,15 +1,12 @@
 // Select the button and the div
-const button = document.getElementById("myButton");
+
 const button2 = document.getElementById("myButton2");
 const div1 = document.getElementById("div1");
 
-// Add a click event listener to the button
-button.addEventListener("click", () => {
-    // Update the text content of the div
-    div1.textContent = "Selamlar";
-});
+
 button2.addEventListener("click", () => {
 
-    div2.textContent = `Merhaba ${document.getElementById("myTextarea").value}`;
+    div2.innerHTML = `Merhaba ${document.getElementById("myTextarea").value.slice(0, 1).toUpperCase() + document.getElementById("myTextarea").value.slice(24)}<br>Date: ${new Date().toLocaleString()}`;
     console.log(document.getElementById("myTextarea").value);
+    localStorage.setItem("name", document.getElementById("myTextarea").value);
 });
