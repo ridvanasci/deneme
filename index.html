@@ -3,58 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Click Example</title>
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
+    <title>Rıdvan Aşcı - Cybersecurity Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .section-title {
+            color: #1e3c72;
+            font-weight: 600;
+            border-bottom: 2px solid #4facfe;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-chip {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            margin: 0.25rem;
+            font-size: 0.875rem;
+        }
+
+        .cyber-chip {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+
+        .network-chip {
+            background-color: #f0f9ff;
+            color: #0c4a6e;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #4facfe;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 0.5rem;
+            top: 1.25rem;
+            bottom: -1.5rem;
+            width: 2px;
+            background: #e2e8f0;
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .cert-badge {
+            display: inline-block;
+            background-color: #1e3c72;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            margin: 0.25rem;
+            font-size: 0.875rem;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
-<div id="div1">KODLUYORUZ</div>
-<p>Benim adım ...</p>
+<div class="resume-container bg-white">
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="text-3xl font-bold">Rıdvan Aşcı</h1>
+        <h2 class="text-xl opacity-90">Cybersecurity & Network Specialist</h2>
+        <div class="mt-4 grid grid-cols-2 gap-4 text-sm">
+            <div>
+                <div class="flex items-center mb-1">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    +90 545 805 72 49
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    asci.ridvan@gmail.com
+                </div>
+            </div>
+            <div>
+                <div class="flex items-center mb-1">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    Balıkesir, Turkey
+                </div>
+                <div class="flex items-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    DOB: 05.03.1980
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- Add buttons and a textarea -->
-<button id="myButton2">Click</button>
-<textarea id="myTextarea"> Lütfen İsminizi Giriniz </textarea>
-<div id="div2"></div>
+    <!-- Main Content -->
+    <div class="p-6">
+        <!-- Professional Summary -->
+        <div class="mb-6">
+            <h3 class="section-title text-xl">PROFESSIONAL SUMMARY</h3>
+            <p class="text-gray-700">
+                Experienced IT professional with 5+ years in network security and system administration.
+                Specialized in firewall management, network infrastructure design, and cybersecurity solutions.
+                Proven ability to implement secure systems and troubleshoot complex network issues.
+                Certified Ethical Hacker with hands-on experience in penetration testing and vulnerability assessment.
+            </p>
+        </div>
 
+        <!-- Core Skills -->
+        <div class="mb-6">
+            <h3 class="section-title text-xl">CORE SKILLS</h3>
+            <div class="flex flex-wrap">
+                <span class="cyber-chip skill-chip">Firewall Management</span>
+                <span class="cyber-chip skill-chip">Network Security</span>
+                <span class="network-chip skill-chip">Cisco/Aruba Networks</span>
+                <span class="cyber-chip skill-chip">VPN Configuration</span>
+                <span class="network-chip skill-chip">UTP/Fiber Cabling</span>
+                <span class="cyber-chip skill-chip">Ethical Hacking</span>
+                <span class="network-chip skill-chip">Virtualization</span>
+                <span class="cyber-chip skill-chip">Penetration Testing</span>
+                <span class="network-chip skill-chip">SAN Storage</span>
+                <span class="cyber-chip skill-chip">Security Audits</span>
+                <span class="network-chip skill-chip">DHCP/DNS</span>
+                <span class="cyber-chip skill-chip">Checkpoint/Fortinet</span>
+                <span class="network-chip skill-chip">VMware ESX</span>
+                <span class="cyber-chip skill-chip">MikroTik</span>
+                <span class="network-chip skill-chip">Wireless Engineering</span>
+            </div>
+        </div>
 
-<!-- Link to the JavaScript file -->
-<script src="script.js"></script>
-</body>
-</html>
+        <!-- Work Experience -->
+        <div class="mb-6">
+            <h3 class="section-title text-xl">WORK EXPERIENCE</h3>
 
+            <div class="timeline-item">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-bold">System and Network Administrator</h4>
+                        <p class="text-gray-600">Abdullah Gül University IT Department</p>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Dec 2011 - Aug 2016</span>
+                </div>
+                <ul class="mt-2 text-gray-700 list-disc list-inside text-sm">
+                    <li>Designed and implemented secure network infrastructure including wired and Wi-Fi networks (Aruba, Cisco, HP)</li>
+                    <li>Managed firewall systems (Checkpoint, Fortinet, Pfsense, Mikrotik) ensuring network security</li>
+                    <li>Provided virtualization support (VMware ESX, VirtualBox) for server environments</li>
+                    <li>Administered critical system services: Web, Mail, VPN servers, Proxy, DHCP, DNS</li>
+                    <li>Led installation and maintenance of storage systems (EMC) and SANs</li>
+                    <li>Managed UTP and fiber optic cabling projects (Cat6, Cat7, Multimode, Single Mode)</li>
+                </ul>
+            </div>
 
+            <div class="timeline-item">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-bold">Technical Support</h4>
+                        <p class="text-gray-600">Anıl Technology</p>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Dec 2016 - Feb 2017</span>
+                </div>
+                <ul class="mt-2 text-gray-700 list-disc list-inside text-sm">
+                    <li>Provided on-site technical support for Metro Ethernet, routers, and POS devices</li>
+                    <li>Installed IT infrastructure for clients with security best practices</li>
+                    <li>Offered Dell computer technical support and troubleshooting</li>
+                </ul>
+            </div>
 
+            <div class="timeline-item">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-bold">System Administrator</h4>
+                        <p class="text-gray-600">Simfer</p>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Feb 2018 - Apr 2018</span>
+                </div>
+                <ul class="mt-2 text-gray-700 list-disc list-inside text-sm">
+                    <li>Managed system administration tasks including server maintenance</li>
+                    <li>Implemented IT infrastructure updates with security considerations</li>
+                    <li>Ensured stability and security of company systems and servers</li>
+                </ul>
+            </div>
 
+            <div class="timeline-item">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h4 class="font-bold">E-commerce Manager</h4>
+                        <p class="text-gray-600">Current Position</p>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">May 2024 - Present</span>
+                </div>
+                <ul class="mt-2 text-gray-700 list-disc list-inside text-sm">
+                    <li>Managed and optimized online sales channels with security protocols</li>
+                    <li>Coordinated with IT department for secure e-commerce platform integration</li>
+                </ul>
+            </div>
+        </div>
 
+        <!-- Education -->
+        <div class="mb-6">
+            <h3 class="section-title text-xl">EDUCATION</h3>
 
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-3 rounded">
+                    <h4 class="font-bold">Bachelor of International Trade and Logistics Management</h4>
+                    <p class="text-gray-600">Anadolu University</p>
+                    <p class="text-sm text-gray-500">2019 - 2023</p>
+                </div>
 
+                <div class="bg-gray-50 p-3 rounded">
+                    <h4 class="font-bold">Master of Electronics Engineering</h4>
+                    <p class="text-gray-600">Technical University of Berlin</p>
+                    <p class="text-sm text-gray-500">2003 - 2006 (in German)</p>
+                </div>
 
+                <div class="bg-gray-50 p-3 rounded">
+                    <h4 class="font-bold">Bachelor of Electronics Engineering</h4>
+                    <p class="text-gray-600">Istanbul University</p>
+                    <p class="text-sm text-gray-500">1998 - 2002 (in English)</p>
+                </div>
 
+                <div class="bg-gray-50 p-3 rounded">
+                    <h4 class="font-bold">German Language Course</h4>
+                    <p class="text-gray-600">Berlin</p>
+                    <p class="text-sm text-gray-500">2002 - 2003</p>
+                </div>
+            </div>
+        </div>
 
+        <!-- Certifications -->
+        <div class="mb-6">
+            <h3 class="section-title text-xl">CERTIFICATIONS</h3>
+            <div class="flex flex-wrap">
+                <span class="cert-badge">Certified Ethical Hacker (CEH)</span>
+                <span class="cert-badge">MikroTik Certified Network Associate</span>
+                <span class="cert-badge">MikroTik Certified Routing Engineer</span>
+                <span class="cert-badge">MikroTik Certified Wireless Engineer</span>
+                <span class="cert-badge">MikroTik Traffic Control Engineer</span>
+                <span class="cert-badge">Checkpoint Firewall Training</span>
+                <span class="cert-badge">Java Intermediate</span>
+                <span class="cert-badge">Python Fundamentals</span>
+                <span class="cert-badge">Storage Area Network</span>
+            </div>
+        </div>
 
-<!--<!DOCTYPE html>-->
-<!--<html lang="en">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <title>Button Click Example</title>-->
-<!--    &lt;!&ndash; Link to the external CSS file &ndash;&gt;-->
-<!--    <link rel="stylesheet" href="style.css">-->
-<!--</head>-->
+        <!-- Languages -->
+        <div class="mb-6">
+            <h3 class="section-title text-xl">LANGUAGES</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h4 class="font-bold">English</h4>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">Speaking: B2 | Writing: C1 | Listening: C1</p>
+                </div>
+                <div>
+                    <h4 class="font-bold">German</h4>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">Speaking: C1 | Writing: C1 | Listening: C1</p>
+                </div>
+            </div>
+        </div>
 
-<!--<body>-->
-<!--<div id="div1">Selamlar, how are you?</div>-->
-<!--<p>Benim adım ...</p>-->
-
-<!--&lt;!&ndash; Add buttons and a textarea &ndash;&gt;-->
-<!--<button id="myButton">Click Me</button>-->
-<!--<button id="myButton2">Click</button>-->
-<!--<textarea id="myTextarea"> İsminiz Nedir</textarea>-->
-<!--<div id="div2"></div>-->
-
-
-<!--&lt;!&ndash; Link to the JavaScript file &ndash;&gt;-->
-<!--<script src="script.js"></script>-->
-<!--</body>-->
-<!--</html>-->
+        <!-- Hobbies -->
+        <div>
+            <h3 class="section-title text-xl">HOBBIES</h3>
+            <div class="flex space-x-4">
+                    <span class="flex items-center">
+                        <svg class="w-5 h-5 mr-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke
